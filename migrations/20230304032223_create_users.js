@@ -21,7 +21,7 @@ exports.up = function (knex) {
             table.string('name')
             table.string('email')
             table.string('password')
-            table.boolean('role')
+            table.string('role')
         })
         .then(() => knex('users').insert(users))
 }
